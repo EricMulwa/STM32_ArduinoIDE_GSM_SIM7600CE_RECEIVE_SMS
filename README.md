@@ -25,3 +25,44 @@ It's designed for remote control of a connected device by sending SMS commands. 
 Please note that this code is a basic example and can be expanded to support more commands or additional functionalities as per your project requirements.
 ## Author
 ERIC MULWA BSc Eng 
+
+
+# Before Using the Program
+
+Before you can use the program, you need to install the STM32Duino library. Follow these steps to set up the environment:
+
+1. **Install the STM32Duino Library:**
+
+   To use this program, you'll need to install the STM32Duino library. You can do this by adding a custom URL to your Arduino IDE's Boards Manager. Follow these steps:
+
+   - Copy the following link:
+     ```
+     http://dan.drown.org/stm32duino/package_STM32duino_index.json
+     ```
+   - Open the Arduino IDE.
+   - Go to `File > Preferences`.
+   - In the "Additional Boards Manager URLs" field, paste the copied link.
+   - Click "OK" to save the changes.
+
+2. **Install STM32Duino Packages:**
+
+   - Open the Arduino IDE.
+   - Go to `Tools > Board > Boards Manager`.
+   - In the Boards Manager, search for "STM32" and install the following packages:
+     - "STM32F1xx"
+     - STM32F4xx
+
+
+3. **Select Your Board Variant:**
+     - "STM32 72MHz CPU Speed"
+     - "STM32 COM Port 3"
+     - "STM32 ST-Link Upload Method"
+  I used the STM32F103CB 128K Flash Variant, COM Port 3, 72MHz CPU Speed and ST-Link Upload Method.
+
+Depending on your specific hardware configuration, you may need to select the appropriate board variant. For example, you can choose the "STM32F103CB 128K Flash Variant" as the target board.
+
+Now, your environment is set up to use the program with the STM32Duino library and the necessary packages. You can upload the code to your STM32F103C8T6 microcontroller and start using the SMS sending functionality.
+
+## Author
+Eric Mulwa Eng BSc 
+
